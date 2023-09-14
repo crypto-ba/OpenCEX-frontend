@@ -10,6 +10,6 @@ export default [
   {
     path: "/trade",
     name: "trade",
-    redirect: "/trade/BTC-USDT",
+    redirect: "/trade/RXCG-USDT",
   },
 ];

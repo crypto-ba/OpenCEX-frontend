@@ -769,7 +769,7 @@ const common = {
     resend_reg_email_after: "Повторная отправка через",
     send: "Отправить",
     copyright: "{title} Криптовалютная платформа",
-    built_by: "Создано на базе платформы OpenCEX компании Polygant",
+    built_by: "Создано на базе платформы crypto.ba компании Polygant",
     password_upper: "Хотя бы одну заглавную букву",
     password_lower: "Хотя бы одну строчную",
     password_number: "Хотя бы одну цифру",

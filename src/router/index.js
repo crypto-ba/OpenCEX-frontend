@@ -73,7 +73,7 @@ let routes = [
   {
     path: "/",
     name: "account-root",
-    redirect: "/trade/BTC-USDT",
+    redirect: "/trade/RXCG-USDT",
   },
   {
     path: "/404",
