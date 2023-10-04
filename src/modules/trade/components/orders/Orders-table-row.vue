@@ -22,9 +22,7 @@
       :style="order.owner ? 'font-weight: 600' : ''"
     >
       <div class="sell-orders__td">
-        {{
-          order.price
-        }}
+        {{order.price}}
       </div>
       <div
         v-if="isCircle && isAuthorized"
