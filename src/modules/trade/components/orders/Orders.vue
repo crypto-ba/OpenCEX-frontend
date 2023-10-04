@@ -151,7 +151,7 @@ export default {
         let groupdepth = 0;
         orders.forEach((order) => {
           order.price = this.setPrecision
-            ? parseFloat(order.price).toFixed(this.setPrecision)
+            ? order.price
             : order.price;
           groupdepth += order.quantity;
           order.depth = groupdepth;
