@@ -177,7 +177,7 @@
           "
           class="orders-table__td"
         >
-          {{ order.price }}
+          {{ addSpaceFixDecimal(order.quantity * order.price, 3, true) }}
         </span>
         <span
           v-if="
