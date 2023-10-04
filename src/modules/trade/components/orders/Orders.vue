@@ -113,11 +113,22 @@ export default {
     },
     setPrecision() {
       let toFixed = 0;
-      if (this.selectedPrecision && this.selectedPrecision.split(".")[1]) {
-        toFixed = this.selectedPrecision.split(".")[1].length;
+      if (this.selectedPrecision) {
+        const decimalPlaces = this.selectedPrecision.split(".")[1];
+        if (decimalPlaces) {
+          toFixed = decimalPlaces.length;
+        } else {
+          // If there are no decimal places specified, default to 0
+          toFixed = 0;
+        }
+        
+        // Check if the number is less than 1, and set precision to display the whole number
+        if (parseFloat(this.selectedPrecision) < 1) {
+          toFixed = 0;
+        }
       }
       return toFixed;
-    },
+    }
   },
   watch: {
     precision(newPrecision) {
