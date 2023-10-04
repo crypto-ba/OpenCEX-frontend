@@ -23,7 +23,7 @@
     >
       <div class="sell-orders__td">
         {{
-          addSpaceFixDecimal(order.price, coins[currentQuoteCurrency].decimals)
+          order.price
         }}
       </div>
       <div
