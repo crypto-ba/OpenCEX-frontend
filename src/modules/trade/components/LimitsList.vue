@@ -204,22 +204,22 @@ export default {
   },
 
   watch: {
-    getSuggestedOrderParameters: {
-      deep: true,
-      handler({ operation, quantity, price }) {
-        if (operation === this.operation) {
-          this.operationData.quantity = String(quantity);
-          this.operationData.price = String(price);
-        }
-      },
-    },
+    // getSuggestedOrderParameters: {
+    //   deep: true,
+    //   handler({ operation, quantity, price }) {
+    //     if (operation === this.operation) {
+    //       this.operationData.quantity = String(quantity);
+    //       this.operationData.price = String(price);
+    //     }
+    //   },
+    // },
 
-    "operationData.quantity": "updateResultedSum",
-    "operationData.price"() {
-      this.updateResultedSum();
-      this.updateOperationQuantity();
-    },
-    resultedQuoteSum: "updateOperationQuantity",
+    // "operationData.quantity": "updateResultedSum",
+    // "operationData.price"() {
+    //   this.updateResultedSum();
+    //   this.updateOperationQuantity();
+    // },
+    // resultedQuoteSum: "updateOperationQuantity",
   },
 
   methods: {
