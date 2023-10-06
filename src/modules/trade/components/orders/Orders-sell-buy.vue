@@ -102,7 +102,7 @@ export default {
       return !!pair?.active || "";
     },
     getPriceForStakan() {
-      const price = this.currentPriceStakan;
+     this.currentPriceStakan;
 
       
     },
